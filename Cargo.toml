@@ -1,6 +1,6 @@
 [package]
 name = "lpc176x-5x"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Adam Spofford <pieflavor.mc@gmail.com>"]
 description = "Register mappings for the NXP LPC176x-5x family of ARM Cortex-M3 microcontrollers"
 license = "WTFPL"
