@@ -1,0 +1,20 @@
+[package]
+name = "lpc176x-5x"
+version = "0.1.0"
+authors = ["Adam Spofford <pieflavor.mc@gmail.com>"]
+description = "Register mappings for the NXP LPC176x-5x family of ARM Cortex-M3 microcontrollers"
+license = "WTFPL"
+readme = "README.md"
+repository = "https://github.com/pie-flavor/lpc176x-5x"
+categories = ["no-std", "embedded", "hardware-support"]
+keywords = ["lpc", "nxp", "svd2rust", "arm", "cortex-m"]
+edition = "2018"
+
+[dependencies]
+bare-metal = "0.2.4"
+cortex-m = "0.5.8"
+vcell = "0.1.0"
+cortex-m-rt = { version = "0.6.7", optional = true }
+
+[features]
+rt = ["cortex-m-rt/device"]
